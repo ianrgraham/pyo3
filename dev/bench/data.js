@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629965752417,
-  "repoUrl": "https://github.com/PyO3/pyo3",
+  "lastUpdate": 1648485490763,
+  "repoUrl": "https://github.com/ianrgraham/pyo3",
   "entries": {
     "pyo3-bench": [
       {
@@ -19931,6 +19931,180 @@ window.BENCHMARK_DATA = {
             "name": "tuple_get_item_unchecked",
             "value": 475334,
             "range": "± 755",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1939362+davidhewitt@users.noreply.github.com",
+            "name": "David Hewitt",
+            "username": "davidhewitt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9b92d98414a80f49bf47f82dd88ff5f126da010f",
+          "message": "Merge pull request #2252 from messense/xtask-actions\n\nDon't capture output when running command in xtask",
+          "timestamp": "2022-03-28T12:02:49+01:00",
+          "tree_id": "4a94f11ebe438d21e97c43ada8702e3a93e07d1e",
+          "url": "https://github.com/ianrgraham/pyo3/commit/9b92d98414a80f49bf47f82dd88ff5f126da010f"
+        },
+        "date": 1648485468284,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "call_0",
+            "value": 88088,
+            "range": "± 2949",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_method_0",
+            "value": 243561,
+            "range": "± 11225",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_dict",
+            "value": 3100592,
+            "range": "± 160886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_new",
+            "value": 5338598,
+            "range": "± 281263",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_get_item",
+            "value": 3325356,
+            "range": "± 143909",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashmap",
+            "value": 8598108,
+            "range": "± 526377",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreemap",
+            "value": 14144772,
+            "range": "± 731550",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashbrown_map",
+            "value": 7727692,
+            "range": "± 348585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_gilpool_new",
+            "value": 20,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_acquire_gil",
+            "value": 110,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dirty_acquire_gil",
+            "value": 112,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_list",
+            "value": 1977797,
+            "range": "± 81989",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_new",
+            "value": 1655596,
+            "range": "± 116757",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item",
+            "value": 1248915,
+            "range": "± 63562",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item_unchecked",
+            "value": 1042727,
+            "range": "± 58148",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "first_time_init",
+            "value": 5213,
+            "range": "± 21247",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "drop_many_objects",
+            "value": 3689,
+            "range": "± 206",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_set",
+            "value": 2545067,
+            "range": "± 107400",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashset",
+            "value": 9913622,
+            "range": "± 330853",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreeset",
+            "value": 4376487,
+            "range": "± 197224",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashbrown_set",
+            "value": 6711827,
+            "range": "± 269583",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_tuple",
+            "value": 1383862,
+            "range": "± 56203",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new",
+            "value": 1620703,
+            "range": "± 53098",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item",
+            "value": 890477,
+            "range": "± 38813",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item_unchecked",
+            "value": 766638,
+            "range": "± 32265",
             "unit": "ns/iter"
           }
         ]
