@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648485490763,
+  "lastUpdate": 1648485679638,
   "repoUrl": "https://github.com/ianrgraham/pyo3",
   "entries": {
     "pyo3-bench": [
@@ -34114,6 +34114,128 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 1.1103128293216689e-7",
             "extra": "mean: 132.7244201974983 nsec\nrounds: 90091"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1939362+davidhewitt@users.noreply.github.com",
+            "name": "David Hewitt",
+            "username": "davidhewitt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9b92d98414a80f49bf47f82dd88ff5f126da010f",
+          "message": "Merge pull request #2252 from messense/xtask-actions\n\nDon't capture output when running command in xtask",
+          "timestamp": "2022-03-28T12:02:49+01:00",
+          "tree_id": "4a94f11ebe438d21e97c43ada8702e3a93e07d1e",
+          "url": "https://github.com/ianrgraham/pyo3/commit/9b92d98414a80f49bf47f82dd88ff5f126da010f"
+        },
+        "date": 1648485654138,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/test_pyclasses.py::test_empty_class_init",
+            "value": 5292778.396786163,
+            "unit": "iter/sec",
+            "range": "stddev: 2.6106722059966893e-8",
+            "extra": "mean: 188.93668410657634 nsec\nrounds: 200000"
+          },
+          {
+            "name": "tests/test_pyclasses.py::test_empty_class_init_py",
+            "value": 6950338.880910768,
+            "unit": "iter/sec",
+            "range": "stddev: 1.607094167061048e-8",
+            "extra": "mean: 143.87787662360867 nsec\nrounds: 63691"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_none_py",
+            "value": 8155326.720854952,
+            "unit": "iter/sec",
+            "range": "stddev: 1.8433784562559316e-8",
+            "extra": "mean: 122.61924435753913 nsec\nrounds: 78119"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_none_rs",
+            "value": 8424136.257247321,
+            "unit": "iter/sec",
+            "range": "stddev: 1.5023303930466863e-8",
+            "extra": "mean: 118.70653197706572 nsec\nrounds: 83327"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_py",
+            "value": 3056608.649914125,
+            "unit": "iter/sec",
+            "range": "stddev: 7.706885287759475e-8",
+            "extra": "mean: 327.1599718950265 nsec\nrounds: 192308"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_rs",
+            "value": 1944601.752422079,
+            "unit": "iter/sec",
+            "range": "stddev: 1.0355956106746892e-7",
+            "extra": "mean: 514.2441112965363 nsec\nrounds: 140846"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_py",
+            "value": 2499328.351318945,
+            "unit": "iter/sec",
+            "range": "stddev: 8.063357475495167e-8",
+            "extra": "mean: 400.1074926680634 nsec\nrounds: 192308"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_rs",
+            "value": 1680842.6301361108,
+            "unit": "iter/sec",
+            "range": "stddev: 7.359850128060468e-8",
+            "extra": "mean: 594.9396939789918 nsec\nrounds: 69440"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_kwargs_py",
+            "value": 1703566.761228504,
+            "unit": "iter/sec",
+            "range": "stddev: 7.093079311504263e-8",
+            "extra": "mean: 587.0037046736538 nsec\nrounds: 76336"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_kwargs_rs",
+            "value": 1522524.6080409568,
+            "unit": "iter/sec",
+            "range": "stddev: 7.836020563697495e-8",
+            "extra": "mean: 656.8038340520801 nsec\nrounds: 68961"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_kwargs_py",
+            "value": 1698523.0275976774,
+            "unit": "iter/sec",
+            "range": "stddev: 7.427733597239427e-8",
+            "extra": "mean: 588.7468016341 nsec\nrounds: 71943"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_kwargs_rs",
+            "value": 1565333.1452199924,
+            "unit": "iter/sec",
+            "range": "stddev: 8.760736877353226e-8",
+            "extra": "mean: 638.8416440639043 nsec\nrounds: 64517"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_args_kwargs_py",
+            "value": 2283000.9309369554,
+            "unit": "iter/sec",
+            "range": "stddev: 1.1359933330002598e-7",
+            "extra": "mean: 438.01997031567777 nsec\nrounds: 178540"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_args_kwargs_rs",
+            "value": 4694758.628672079,
+            "unit": "iter/sec",
+            "range": "stddev: 4.824990528775619e-8",
+            "extra": "mean: 213.00349583307585 nsec\nrounds: 200000"
           }
         ]
       }
