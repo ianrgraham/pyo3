@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1670100209355,
+  "lastUpdate": 1671552620345,
   "repoUrl": "https://github.com/ianrgraham/pyo3",
   "entries": {
     "pyo3-bench": [
@@ -20279,6 +20279,186 @@ window.BENCHMARK_DATA = {
             "name": "tuple_get_item_unchecked",
             "value": 862743,
             "range": "± 99843",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "26634292+bors[bot]@users.noreply.github.com",
+            "name": "bors[bot]",
+            "username": "bors[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f70fc6e0c0eddddda4eeeed939e1c501cf93b89",
+          "message": "Merge #2820\n\n2820: netlify: remove trailing slash rewrites r=davidhewitt a=davidhewitt\n\nSo adding rewrite rules in #2819 didn't work, created infinite redirect loops. Instead I've enabled the pretty URLs at https://docs.netlify.com/routing/redirects/redirect-options/#trailing-slash, let's see if that works.\n\nCo-authored-by: David Hewitt <1939362+davidhewitt@users.noreply.github.com>",
+          "timestamp": "2022-12-18T22:20:43Z",
+          "tree_id": "cdecd2b3a08ff1babde185bc9f26bc36d51d641d",
+          "url": "https://github.com/ianrgraham/pyo3/commit/0f70fc6e0c0eddddda4eeeed939e1c501cf93b89"
+        },
+        "date": 1671552588183,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "call_0",
+            "value": 74148,
+            "range": "± 3273",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_method_0",
+            "value": 204257,
+            "range": "± 13968",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_dict",
+            "value": 3835131,
+            "range": "± 180483",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_new",
+            "value": 5493908,
+            "range": "± 354009",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_get_item",
+            "value": 3904840,
+            "range": "± 245367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashmap",
+            "value": 12183528,
+            "range": "± 1181112",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreemap",
+            "value": 17079108,
+            "range": "± 924004",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashbrown_map",
+            "value": 10241855,
+            "range": "± 1200129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_gilpool_new",
+            "value": 18,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_acquire_gil",
+            "value": 129,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dirty_acquire_gil",
+            "value": 132,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_list",
+            "value": 2447653,
+            "range": "± 107802",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_new",
+            "value": 1499910,
+            "range": "± 199142",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item",
+            "value": 1463025,
+            "range": "± 73408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item_unchecked",
+            "value": 1292921,
+            "range": "± 91665",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "first_time_init",
+            "value": 5501,
+            "range": "± 22178",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "drop_many_objects",
+            "value": 4733,
+            "range": "± 342",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "set_new",
+            "value": 2314620,
+            "range": "± 182181",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_set",
+            "value": 3205501,
+            "range": "± 253113",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashset",
+            "value": 12425867,
+            "range": "± 553754",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreeset",
+            "value": 5471374,
+            "range": "± 233800",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashbrown_set",
+            "value": 8919269,
+            "range": "± 343662",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_tuple",
+            "value": 1734067,
+            "range": "± 52841",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new",
+            "value": 1510197,
+            "range": "± 151197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item",
+            "value": 1143084,
+            "range": "± 107581",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item_unchecked",
+            "value": 1011493,
+            "range": "± 35920",
             "unit": "ns/iter"
           }
         ]
