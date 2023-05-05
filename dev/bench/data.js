@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683315992579,
+  "lastUpdate": 1683316119689,
   "repoUrl": "https://github.com/ianrgraham/pyo3",
   "entries": {
     "pyo3-bench": [
@@ -35212,6 +35212,128 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.580365074814527e-8",
             "extra": "mean: 205.23369219161606 nsec\nrounds: 196079"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "26634292+bors[bot]@users.noreply.github.com",
+            "name": "bors[bot]",
+            "username": "bors[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1cdac4fde4454388fa7acc5b558f6301ff71dcea",
+          "message": "Merge #2980\n\n2980: support `text_signature` on `#[new]` r=adamreichold a=davidhewitt\n\nCloses #2866 \r\n\r\nThis is a breaking change for 0.19.0, because it starts autogenerating `text_signature` for `#[new]`. This could affect runtime behaviour if the user is relying on the class docs at runtime for some reason.\r\n\r\nGuide & tests all updated accordingly.\r\n\r\n`#[pyclass(text_signature = \"...\")]` is deprecated by this PR, however if it's set, it will be used in preference to `#[new]`.\r\n\r\n(The signature / `text_signature` from `#[new]` will simply be ignored in this case. I figure that when users fix their deprecation warnings by removing `#[pyclass(text_signature = \"...\")]` then the `#[new]` signatures will start flowing properly, and this is good enough.)\n\nCo-authored-by: David Hewitt <1939362+davidhewitt@users.noreply.github.com>\nCo-authored-by: Adam Reichold <adam.reichold@t-online.de>",
+          "timestamp": "2023-05-04T16:51:54Z",
+          "tree_id": "de47e6535ad41da0eb5b9533d9f54b54536560dc",
+          "url": "https://github.com/ianrgraham/pyo3/commit/1cdac4fde4454388fa7acc5b558f6301ff71dcea"
+        },
+        "date": 1683316097816,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/test_pyclasses.py::test_empty_class_init",
+            "value": 3483749.596962163,
+            "unit": "iter/sec",
+            "range": "stddev: 4.137713173283351e-7",
+            "extra": "mean: 287.0470371555987 nsec\nrounds: 140846"
+          },
+          {
+            "name": "tests/test_pyclasses.py::test_empty_class_init_py",
+            "value": 8565091.01160915,
+            "unit": "iter/sec",
+            "range": "stddev: 4.733562324673781e-9",
+            "extra": "mean: 116.75299172473491 nsec\nrounds: 72988"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_none_py",
+            "value": 12534480.316450594,
+            "unit": "iter/sec",
+            "range": "stddev: 4.276098513255375e-9",
+            "extra": "mean: 79.77993301298407 nsec\nrounds: 123457"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_none_rs",
+            "value": 11949461.287986599,
+            "unit": "iter/sec",
+            "range": "stddev: 2.7505749895529085e-9",
+            "extra": "mean: 83.68578096529083 nsec\nrounds: 59881"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_py",
+            "value": 4167586.928172739,
+            "unit": "iter/sec",
+            "range": "stddev: 1.9055838178844055e-8",
+            "extra": "mean: 239.9470046419758 nsec\nrounds: 116280"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_rs",
+            "value": 2456462.9162082374,
+            "unit": "iter/sec",
+            "range": "stddev: 7.137348766829692e-8",
+            "extra": "mean: 407.0893940233327 nsec\nrounds: 153847"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_py",
+            "value": 3760179.8718006215,
+            "unit": "iter/sec",
+            "range": "stddev: 2.1665574054563364e-8",
+            "extra": "mean: 265.94472447964205 nsec\nrounds: 196079"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_rs",
+            "value": 1839516.5335806643,
+            "unit": "iter/sec",
+            "range": "stddev: 1.202788142814e-7",
+            "extra": "mean: 543.6210992099512 nsec\nrounds: 85463"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_kwargs_py",
+            "value": 2610860.536320747,
+            "unit": "iter/sec",
+            "range": "stddev: 1.9328641243651914e-8",
+            "extra": "mean: 383.0154794133211 nsec\nrounds: 108696"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_kwargs_rs",
+            "value": 1567748.3600066202,
+            "unit": "iter/sec",
+            "range": "stddev: 1.1516889694821275e-7",
+            "extra": "mean: 637.8574683986767 nsec\nrounds: 107527"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_kwargs_py",
+            "value": 2347690.7831534497,
+            "unit": "iter/sec",
+            "range": "stddev: 2.9065025891077348e-8",
+            "extra": "mean: 425.9504731954041 nsec\nrounds: 142858"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_simple_args_kwargs_rs",
+            "value": 1557811.5415618839,
+            "unit": "iter/sec",
+            "range": "stddev: 1.1011007064712812e-7",
+            "extra": "mean: 641.926172274591 nsec\nrounds: 109891"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_args_kwargs_py",
+            "value": 2943323.2213432603,
+            "unit": "iter/sec",
+            "range": "stddev: 2.3699066057728833e-8",
+            "extra": "mean: 339.7520166146243 nsec\nrounds: 109879"
+          },
+          {
+            "name": "tests/test_pyfunctions.py::test_args_kwargs_rs",
+            "value": 6050661.687149365,
+            "unit": "iter/sec",
+            "range": "stddev: 1.175605182263266e-8",
+            "extra": "mean: 165.2711805260197 nsec\nrounds: 196079"
           }
         ]
       }
